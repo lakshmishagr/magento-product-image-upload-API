@@ -26,3 +26,4 @@ Params :
  
 Response : 200 OK , (Product Details in that  media_gallery_entries shows uploaded image path)
 
+Screenshots : in Screenshots folder
