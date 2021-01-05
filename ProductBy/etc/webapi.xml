@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Webapi:etc/webapi.xsd">
+<route url="/V1/productbyurl/:urlKey" method="GET">
+ <service class="MyModules\ProductBy\Api\ProductByInterface" method="getProductByUrl"/>
+ <resources>
+   <resource ref="anonymous"/>
+ </resources>
+</route>
+<route url="/V1/productbyid/:id" method="GET">
+ <service class="MyModules\ProductBy\Api\ProductByInterface" method="getProductById"/>
+ <resources>
+   <resource ref="anonymous"/>
+ </resources>
+</route>
+<route url="/V1/skuproductbyurl/:urlKey" method="GET">
+ <service class="MyModules\ProductBy\Api\ProductByInterface" method="skuProductByUrl"/>
+ <resources>
+   <resource ref="anonymous"/>
+ </resources>
+</route>
+<route url="/V1/getcategorybyurl/:urlKey" method="GET">
+ <service class="MyModules\ProductBy\Api\ProductByInterface" method="getcategorybyurl"/>
+ <resources>
+   <resource ref="anonymous"/>
+ </resources>
+</route>
+<route url="/V1/getbestseller" method="GET">
+ <service class="MyModules\ProductBy\Api\ProductByInterface" method="getBestSeller"/>
+ <resources>
+   <resource ref="anonymous"/>
+ </resources>
+</route>
+<route url="/V1/also-viewed/:id" method="GET">
+ <service class="MyModules\ProductBy\Api\ProductByInterface" method="getAlsoViewed"/>
+ <resources>
+   <resource ref="anonymous"/>
+ </resources>
+</route>
+<route url="/V1/api/uploadProductImage/:sku" method="POST">
+ <service class="MyModules\ProductBy\Api\ProductByInterface" method="uploadProductImage"/>
+ <resources>
+   <resource ref="anonymous"/>
+ </resources>
+</route>
+</routes>
+
+
+
